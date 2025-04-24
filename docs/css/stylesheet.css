@@ -1,0 +1,829 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	color: #333;
+	font-size: 18px;
+}
+
+
+/* --- Universal Button --- */
+.btn-dark {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #0e2e14;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+/* HEADER */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	padding: 20px 60px;
+	border-bottom: 1px solid #ccc;
+}
+
+header h1 a {
+	margin: 0;
+	font-size: 42px;
+	color: #2d4c2e;
+	text-decoration: none;
+}
+
+/* NAVIGATION MENU & SUBMENU */
+nav a {
+	margin-left: 20px;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+nav ul.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul.menu li {
+	position: relative;
+}
+
+nav ul.menu > li > a {
+	margin-left: 20px;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	padding: 10px;
+	display: block;
+}
+
+nav ul.submenu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: white;
+	list-style: none;
+	padding: 10px 0;
+	margin: 0;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+	z-index: 10;
+	min-width: 200px;
+}
+
+nav ul.submenu li a {
+	display: block;
+	padding: 8px 20px;
+	color: #333;
+	white-space: nowrap;
+}
+
+nav ul.menu li:hover .submenu {
+	display: block;
+}
+
+/* sub menu css */
+nav ul.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul.menu li {
+	position: relative;
+}
+
+nav ul.menu > li > a {
+	margin-left: 20px;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	padding: 10px;
+	display: block;
+}
+
+nav ul.submenu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: white;
+	list-style: none;
+	padding: 10px 0;
+	margin: 0;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+	z-index: 10;
+	min-width: 200px;
+}
+
+nav ul.submenu li a {
+	display: block;
+	padding: 8px 20px;
+	color: #333;
+	white-space: nowrap;
+}
+
+nav ul.menu li:hover .submenu {
+	display: block;
+}
+
+/* FOOTER */
+.footer {
+	background-color: #2d4c2e;
+	color: white;
+	padding: 30px 60px;
+	bottom: 0px;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #aaa;
+	padding: 20px 60px;
+	color: #333;
+}
+
+.footer-top button {
+	padding: 10px 16px;
+	background-color: #333;
+	color: white;
+	border: none;
+}
+
+.footer-columns {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.footer-columns div {
+	width: 20%;
+}
+
+.footer-columns p {
+	margin: 8px 0;
+}
+
+
+/* --- MAIN MENU PAGES  --- */
+
+
+/* HOMEPAGE */
+.header-image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 60px;
+}
+
+.intro {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 60px;
+	background-color: #fff;
+}
+
+.intro-text {
+	flex: 1;
+	padding-right: 30px;
+}
+
+.intro-text h2 {
+	font-family: Georgia, serif;
+	color: #2d4c2e;
+}
+
+.intro-text p {
+	line-height: 1.6;
+}
+
+.intro-img img {
+	width: 400px;
+	height: auto;
+}
+
+.intro button {
+	background-color: #2d4c2e;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.explore {
+	text-align: center;
+	padding: 60px;
+	background-color: #e0e0d8;
+}
+
+.explore h3 {
+	font-size: 24px;
+	color: #2d4c2e;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+.card {
+	width: 220px;
+	background-color: #fff;
+	padding: 15px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	text-align: center;
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+}
+
+.card h4 {
+	margin-top: 10px;
+}
+
+.card button {
+	margin-top: 10px;
+	padding: 8px 16px;
+	background-color: black;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.community {
+	display: flex;
+	justify-content: space-between;
+	padding: 60px;
+	background-color: #fff;
+}
+
+.community-img {
+	width: 50%;
+}
+
+.community-img img {
+	width: 100%;
+}
+
+.community-text {
+	width: 45%;
+	padding-left: 40px;
+}
+
+.community-text h3 {
+	color: #2d4c2e;
+}
+
+.community-text p {
+	line-height: 1.6;
+}
+
+.community-text button,
+.community-text .btns button {
+	margin-top: 10px;
+	padding: 8px 16px;
+	background-color: #2d4c2e;
+	color: white;
+	border: none;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+main {
+	padding: 2rem;
+	text-align: center;
+	min-height: 100%;
+}
+
+.section-title {
+	font-size: 2rem;
+	border-bottom: 2px solid #000;
+	margin-bottom: 2rem;
+}
+
+.plan-category {
+	margin-bottom: 3rem;
+}
+
+.plan-category h3 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.plan-grid {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.plan-card {
+	max-width: 250px;
+	text-align: center;
+}
+
+.plan-card img {
+	width: 100%;
+	height: auto;
+	border: 1px solid #ccc;
+}
+
+/* CONTACT US PAGE */
+.contact-page {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* Ensures it stays centered on wide screens */
+	gap: 2rem;
+	padding: 2rem;
+	max-width: 1200px; /* Optional: keeps it from stretching too wide */
+	margin: 0 auto;
+}
+
+.contact-left,
+.contact-right {
+	flex: 1 1 400px; /* Ensures both columns shrink nicely on smaller screens */
+	min-width: 300px;
+}
+
+.contact-left {
+	background-color: #2e4b30;
+	color: #fff;
+	padding: 2rem;
+	border-radius: 8px;
+	max-width: 600px; 
+}
+
+.contact-left h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.contact-left p {
+	margin-bottom: 2rem;
+	line-height: 1.6;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.contact-form .form-row {
+	display: flex;
+	gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+	padding: 0.75rem;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	width: 100%;
+}
+
+.contact-form button {
+	background-color: #000;
+	color: #fff;
+	padding: 0.75rem;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.contact-form button:hover {
+	background-color: #444;
+}
+
+.contact-right {
+	padding: 2rem;
+	font-size: 1.1rem;
+	line-height: 1.8;
+	max-width: 400px; /* Keeps it narrower than the form section */
+}
+
+.contact-right a {
+	color: #004225;
+	text-decoration: none;
+}
+
+.contact-right a:hover {
+	text-decoration: underline;
+}
+
+.directions-btn {
+	display: inline-block;
+	margin-top: 1rem;
+	background-color: #3e5c3b;
+	color: white !important;
+	padding: 0.6rem 1.2rem;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.directions-btn:hover {
+	background-color: #2e4b30;
+}
+
+
+/* SIGN UP / LOG IN PAGE (same layout) */
+.signup-wrapper {
+	max-width: 300px;
+	margin: 100px auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.signup-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.signup-form label {
+	margin-bottom: 5px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.signup-form input {
+	padding: 8px;
+	margin-bottom: 15px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.signup-form button {
+	padding: 10px;
+	font-size: 1rem;
+	background-color: black;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.signup-form button:hover {
+	background-color: #333;
+}
+
+/* --- ABOUT US PAGE --- */
+/* --- About Page Main Layout --- */
+.about-content {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* --- Shared image size for About page --- */
+.about-image {
+	max-width: 100%;
+	width: 500px;
+	height: auto;
+	object-fit: cover;
+	flex: 1;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* --- About Us : Section 1: Intro --- */
+.intro-section {
+	display: flex;
+	gap: 40px;
+	margin-bottom: 60px;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.about-box {
+	flex: 1;
+	min-width: 280px;
+}
+
+.about-box h2 {
+	font-size: 1.8rem;
+	margin-bottom: 20px;
+}
+
+.about-box p {
+	font-size: 1rem;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+/* --- About Us: Section 2: Meet Staff --- */
+.staff-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2e4b30;
+}
+
+.staff-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.staff-member {
+    width: 250px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.staff-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.staff-member h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.staff-member p {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* --- SERVICES PAGE --- */
+.services-alt-layout {
+	max-width: 1100px;
+	margin: 60px auto;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+.service-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	gap: 40px;
+}
+
+/* Alternate layout for reverse rows */
+.service-row.reverse .service-text {
+	order: 2;
+}
+
+.service-row.reverse .service-image {
+	order: 1;
+}
+
+.service-text h3 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+.service-text p {
+	margin-bottom: 10px;
+}
+
+.service-image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border: 1px solid #ddd;
+}
+
+
+/* --- SUBPAGES --- */
+
+
+/* --- SERVICES: OUR MISSION PAGE --- */
+/* --- Main Content Layout --- */
+.mission-content {
+	max-width: 1000px;
+	margin: 60px auto;
+	padding: 0 20px;
+}
+
+/* Centered page heading */
+.center-title {
+	text-align: center;
+	font-size: 2rem;
+	margin: 40px 0;
+}
+
+/* --- Mission Statement Section (2-column layout) --- */
+.mission-statement {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
+	align-items: start;
+	margin-bottom: 60px;
+}
+
+.mission-image img {
+	width: 100%;
+	height: auto;
+	border: 2px solid #555;
+}
+
+.mission-text h3 {
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+}
+
+.mission-text p {
+	line-height: 1.6;
+	margin-bottom: 0;
+	color: #333;
+}
+
+/* --- Mission Paragraph Section --- */
+.mission-extra-text {
+	margin-top: 40px;
+}
+
+.mission-extra-text p {
+	font-size: 1rem;
+	line-height: 1.7;
+	color: #333;
+}
+
+/* DINING PAGE STYLES */
+.dining1 {
+	font-size: 36px;
+	color: #2d4c2e;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.content {
+	max-width: 1000px;
+	margin: 2rem auto;
+	padding: 1rem 2rem;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+	font-size: 24px;
+	color: #2d4c2e;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.rich-text {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.content1,
+.content2,
+.content3 {
+	display: flex;
+	flex-direction: column;
+}
+
+.paragraph {
+	color: #333;
+	line-height: 1.6;
+	font-size: 1.1rem;
+}
+
+.at-horizon-living {
+	margin-bottom: 1rem;
+}
+
+/* Menu Button Styling */
+.button2 {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	margin: 2rem auto;
+	background-color: #2d4c2e;
+	color: white;
+	padding: 0.75rem 1.5rem;
+	text-align: center;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.button2:hover {
+	background-color: #244023;
+}
+.state-layer .label-text {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+/* Dining Page Image */
+.image-18-icon {
+	display: block;
+	max-width: 100%;
+	margin: 2rem auto;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/*Dining menu */
+.menu-content {
+	text-align: center;
+	padding: 2rem;
+}
+
+.menu-title {
+	font-size: 2.5rem;
+	color: #2d4c2e;
+	margin-bottom: 1.5rem;
+}
+
+.menu-image {
+	max-width: 80%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Facilities Pages */
+
+/* Main Facilities Section */
+.facilities-section {
+	padding: 40px 20px;
+	font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .container {
+	max-width: 900px; /* Narrower width */
+	margin: 0 auto;
+	padding: 40px 20px;
+  }
+  
+  /* Center the "Facilities" title */
+  h1 {
+	font-size: 36px; /* Make the "Facilities" text larger */
+	text-align: center; /* Centers the title */
+	margin-bottom: 20px; /* Adds some space below the title */
+  }
+  
+  .facility {
+	margin-bottom: 60px;
+	text-align: center; /* Centers the text in each facility block */
+  }
+  
+  .facility h3 {
+	margin-bottom: 5px;
+	font-size: 24px;
+	text-align: center; /* Centers the subtitle (facility name) */
+  }
+  
+  .subheading,
+.facility p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+  
+  .facility img {
+	max-width: 700px;
+	width: 100%; /* Ensures it fills up the container while respecting max-width */
+	/* Makes it a perfect square */
+	object-fit: cover;
+	object-position: center 20%;
+	border-radius: 16px; /* Rounder corners */
+	background-color: #ccc;
+	display: block;
+	margin: 0 auto; /* This centers the image horizontally */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a nice shadow */
+  }
